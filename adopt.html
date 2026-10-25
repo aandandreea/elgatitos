@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt - El Gatitos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/site_image.jpeg" alt="El Gatitos logo" width="80">
+        <h1>El Gatitos</h1>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="cats.html">cats</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Adoption Form</h2>
+        <p>Fill in the form and we will contact you.</p>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+           
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+
+            <label for="age">Your age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>
+            
+
+            <label for="cat">Which cat do you want?</label>
+                <select id="cat" name="cat">
+                    <option value="tax-collector">Tax Collector</option>
+                    <option value="pocket-chaos">Pocket Chaos</option>
+                    <option value="thunder-nugget">Thunder Nugget</option>
+                    <option value="fried-egg">Fried Egg</option>
+                    <option value="lord-floof">Lord Floof</option>
+                    <option value="pollen">Pollen</option>
+                </select>
+              
+                <p>Do you have other pets?</p>
+      <input type="radio" id="pets-yes" name="pets" value="yes">
+      <label for="pets-yes">Yes</label>
+      <input type="radio" id="pets-no" name="pets" value="no">
+      <label for="pets-no">No</label>
+     
+
+      <label for="message">Why do you want to adopt?</label>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea>
+      
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I promise to take good care of the cat</label>
+     
+
+      <button type="submit">Send request</button>
+
+        </form>
+    </main>
+    <footer>
+    <p>© 2026 El Gatitos</p>
+  </footer>    
+</body>
+</html>
